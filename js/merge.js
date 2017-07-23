@@ -12,10 +12,10 @@ function mergeSort(arr){
         right =arr.slice(mid);
     //send left and right to the mergeSort to broke it down into pieces
     //then merge those
-    return merge(mergeSort(left),mergeSort(right));
+    return mergethis(mergeSort(left),mergeSort(right));
 }
 
-function merge(left, right){
+function mergethis(left, right){
     var result = [],
         lLen = left.length,
         rLen = right.length,
